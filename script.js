@@ -31,16 +31,6 @@ function scrollPage(){
 	}
 }
 
-// An array of stories as strings
-let stories = [
-	'Hello!',
-	'I am a cat, your storyteller.',
-	'I am here to help you understand the world',
-	'It is a fictional world, but a world nonetheless.'
-];
-
-let catDiv = document.getElementById('cat-div');
-let catText = document.getElementById('cat-text');
 let navButtons = document.getElementsByClassName('nav-btn');
 
 // Add scroll event for the whole HTLM document and set changeText function as callback
@@ -60,11 +50,6 @@ function changeText(){
 	// Calculate which section the user has scrolled to
 	// parseInt() function used to ignore decimals
 	let sectionNum = parseInt(pos / height);
-
-	// Set the text of cat-text element depending on which section the user has currently scrolled to
-	catText.innerHTML = stories[sectionNum];
-	// Map vertical scroll position to the horizontal position of the cat
-	catDiv.style.left = pos / (height * 4) * width + 'px';
 
 	// Fix color of navigation button
 	// Set all button color to white
