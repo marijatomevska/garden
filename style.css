@@ -1,31 +1,23 @@
 html{
-	/* Set height of the html page to 100% of the browser height */
 	height: 100%;
-	/* Hide horizontal scroll */
 	overflow-x: hidden;
 	font-family: 'Helvetica', sans-serif;
 }
 
 body{
-	/* Set height of the body to 100% -- separated out of html to allow scrollTo animation */
 	height: 100%;
 	margin: 0px;
 }
 
-/* Full-Width Header with Dynamic Height */
 header {
-    position: fixed;
-    top: 0;
-    left: 0;
     width: 100%; /* Full width of the screen */
     display: flex;
     flex-direction: column; /* Stack nav bar and title vertically */
     align-items: center; /* Center items horizontally */
     background-color: #f0f0f0; /* Background color matching the text sections */
-    z-index: 100; /* Ensure header is above other content */
+    z-index: 1; /* Adjust z-index as necessary */
 }
 
-/* Adjusted Navigation Bar */
 #nav {
     width: 100%; /* Take the full width of the header */
     display: flex;
@@ -34,7 +26,6 @@ header {
     background-color: transparent; /* Maintain the header's background color */
 }
 
-/* Smaller Navigation Buttons */
 .nav-btn {
     width: 20px; /* Smaller width */
     height: 20px; /* Smaller height */
@@ -52,7 +43,6 @@ header {
     transform: scale(1.1); /* Slight increase on hover for feedback */
 }
 
-/* Styled Title */
 #title {
     width: 100%; /* Full width of the header */
     text-align: center;
@@ -63,33 +53,6 @@ header {
 }
 
 
-
-/* 
-Cat Div
-*/
-#cat-div{
-	/* Fix cat div in the bottom left corner of the web page */
-	position: fixed;
-	bottom: 0px;
-	left: 0px;
-	width: 300px;
-	text-align: center;
-}
-
-#cat{
-	width: 300px;
-	margin-top: 18px;
-}
-
-#cat-text{
-	color: white;
-	background-color: black;
-	font-size: 32px;
-}
-
-/* 
-Parallax: Mountain and Ocean sections;
-*/
 #winter, #spring, #summer, #autumn{
 	/* Set height of div to 100% */
 	height: 100%;
@@ -118,9 +81,7 @@ Parallax: Mountain and Ocean sections;
 	/* Set background image of ocean section using url() function */
 	background-image: url('img/autumn.jpeg');
 }
-/* 
-Flower div inside Mountain section
-*/
+
 #circle-div{
     position: relative;
     width: 150px;
@@ -137,7 +98,6 @@ Flower div inside Mountain section
 #circle-text{
 	color: white;
 }
-
 
 
 .text-section {
